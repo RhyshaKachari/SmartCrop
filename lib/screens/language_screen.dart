@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smartcrop/screens/register_screen.dart';
 import 'package:smartcrop/widgets/custom_button.dart';
 class LanguageScreen extends StatefulWidget {
   const LanguageScreen({Key? key}) : super(key: key);
@@ -48,7 +49,9 @@ class _LanguageScreenState extends State<LanguageScreen> {
                   width: double.infinity,
                   height: 50,
                   child:  CustomButton(
-                    onPressed: () {} ,
+                    onPressed: () {
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const RegisterScreen()),);
+                    } ,
                     text: "English",
                   ),
                 ),
@@ -57,7 +60,11 @@ class _LanguageScreenState extends State<LanguageScreen> {
                   width: double.infinity,
                   height: 50,
                   child:  CustomButton(
-                    onPressed: () {} ,
+                    onPressed: () {
+                      Navigator.pushReplacement(context,
+                        MaterialPageRoute(builder: (context)
+                        => const RegisterScreen()),);
+                    } ,
                     text: "हिंदी",
                   ),
                 ),
