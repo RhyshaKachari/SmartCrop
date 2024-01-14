@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smartcrop/widgets/custom_button.dart';
 import 'otp.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -102,7 +103,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
               ),
 
-              
+
 
             ],
           ),
