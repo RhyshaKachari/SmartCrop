@@ -14,10 +14,13 @@ class _LanguageScreenState extends State<LanguageScreen> {
     return Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
-          child: Center(
+
+          child: Container(
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 25,horizontal: 35),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               // mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox( height: 20,),

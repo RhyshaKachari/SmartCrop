@@ -164,6 +164,7 @@ class _UserIntroState extends State<UserIntro> {
                     SizedBox(height: 20),
 
                     Container(
+                      height: 50,
                       width: double.infinity,
                         child: CustomButton(text: "Sign Up", onPressed: (){})),
 

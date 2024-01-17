@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 import 'package:smartcrop/screens/user_intro.dart';
+
+import 'login_screen.dart';
 class MyOtp extends StatefulWidget {
   const MyOtp({Key? key}) : super(key: key);
 
@@ -88,7 +90,7 @@ class _MyOtpState extends State<MyOtp> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => const UserIntro()));
+                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => const LoginScreen()));
                   },
                   child: Text('Verify phone number',
                   style: TextStyle(
